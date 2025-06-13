@@ -1,0 +1,159 @@
+/* إعدادات عامة */
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  color: #ffca28;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* رأس الصفحة */
+header {
+  background-color: #111;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  color: #ff5722;
+}
+
+nav a {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+/* قسم البطل */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('https://images.unsplash.com/photo-1609921212029-77028f2b8101?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e64a19;
+}
+
+/* المميزات */
+.features {
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #ffca28;
+}
+
+.feature-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.feature {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.feature h3 {
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+/* الآراء */
+.reviews {
+  padding: 60px 20px;
+  background-color: #121212;
+  text-align: center;
+}
+
+.reviews h2 {
+  color: #ffca28;
+  margin-bottom: 30px;
+}
+
+.review {
+  background-color: #1f1f1f;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  font-style: italic;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+/* التحميل */
+#download {
+  background-color: #181818;
+  padding: 60px 20px;
+}
+
+/* التذييل */
+footer {
+  background-color: #0b0b0b;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* استجابة الشاشات الصغيرة */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
